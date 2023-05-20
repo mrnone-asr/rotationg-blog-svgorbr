@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blob</title>
+
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src=" https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js "></script>
+</head>
+
+<body>
+    <section class="sec1">
+        <div class="box">
+            <div class="details">
+                <h1>Rotating blog :</h1>
+                <h2>1st using svg, and kute.js lib</h2>
+                <h2>2nd one use borderradious and background img</h2>
+            </div>
+            <svg id="visual" viewBox="0 0 800 700" width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+                class="svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(466.0263431981421 346.1868853714763)">
+                    <path id="blob1"
+                        d="M158.9 -91.9C201.8 -17.5 229.5 65.5 200.5 107.3C171.5 149 85.7 149.5 1.2 148.8C-83.4 148.2 -166.9 146.3 -210.2 96.3C-253.5 46.3 -256.6 -51.8 -214.9 -125.6C-173.2 -199.3 -86.6 -248.7 -14.3 -240.4C58 -232.2 116 -166.3 158.9 -91.9"
+                        fill="#ff0066"></path>
+                </g>
+                <g transform="translate(420.52910104579917 342.0138263298832)" style="visibility: hidden;">
+                    <path id="blob2"
+                        d="M213.2 -123.1C253.2 -53.8 246.5 42.3 203.2 92.3C159.9 142.3 80 146.2 6.5 142.4C-67 138.7 -133.9 127.3 -163.1 85.5C-192.3 43.7 -183.6 -28.7 -150.1 -94.2C-116.6 -159.7 -58.3 -218.3 14.1 -226.5C86.6 -234.7 173.2 -192.3 213.2 -123.1"
+                        fill="#ff0066"></path>
+                </g>
+            </svg>
+            <div class="box2"></div>
+        </div>
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true }
+            )
+            tween.start()
+        </script>
+    </section>
+</body>
+
+</html>

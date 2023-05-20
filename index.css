@@ -1,0 +1,46 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.sec1{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 90%;
+    height: 60%;
+    background-color: rgb(197, 227, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    position: absolute;
+}
+.box .details{
+    width: 30%;
+}
+
+.box2{
+    width: 350px;
+    height: 350px;
+    border: 5px solid #000;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-image: url(./faceimg1.jpg);
+    background-size: cover;
+    animation: anim 5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+@keyframes anim{
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;}
+    100%{border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;}
+}
